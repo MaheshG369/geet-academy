@@ -1,147 +1,472 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GEET Academy | Learning. Healing. Hospitality.</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GEET Academy | Learning • Healing • Hospitality</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#f8fafc;
+color:#333;
+line-height:1.6;
+}
+
+header{
+background:#002B5B;
+color:white;
+padding:15px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,.2);
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#D4AF37;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:500;
+}
+
+nav a:hover{
+color:#D4AF37;
+}
+
+.hero{
+min-height:90vh;
+background:
+linear-gradient(rgba(0,43,91,.85),rgba(0,43,91,.85)),
+url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1600');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+text-align:center;
+color:white;
+padding:40px;
+}
+
+.hero-content{
+max-width:900px;
+margin:auto;
+}
+
+.hero h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.hero span{
+color:#D4AF37;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 28px;
+background:#D4AF37;
+color:#002B5B;
+text-decoration:none;
+border-radius:8px;
+font-weight:600;
+margin:10px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.section{
+padding:80px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:38px;
+color:#002B5B;
+margin-bottom:20px;
+}
+
+.section-sub{
+text-align:center;
+max-width:900px;
+margin:auto;
+margin-bottom:50px;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.stat{
+background:white;
+padding:30px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.stat h2{
+font-size:40px;
+color:#002B5B;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h3{
+color:#002B5B;
+margin-bottom:15px;
+}
+
+.blue{
+background:#002B5B;
+color:white;
+}
+
+.blue .section-title{
+color:white;
+}
+
+.contact-box{
+text-align:center;
+font-size:18px;
+}
+
+footer{
+background:#001a36;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+color:white;
+text-decoration:none;
+width:60px;
+height:60px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+font-size:28px;
+box-shadow:0 4px 15px rgba(0,0,0,.3);
+z-index:9999;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:10px;
+}
+
+nav a{
+display:inline-block;
+margin:5px;
+}
+
+.hero h1{
+font-size:36px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.section-title{
+font-size:30px;
+}
+
+}
+
+</style>
 </head>
+
 <body>
 
 <header>
-    <div class="container">
-        <h1>GEET Academy</h1>
-        <p>Learning. Healing. Hospitality.</p>
-    </div>
-</header>
+
+<div class="logo">GEET Academy</div>
 
 <nav>
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#healthcare">Healthcare</a></li>
-        <li><a href="#patients">Patients</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+<a href="#about">About</a>
+<a href="#healthcare">Healthcare</a>
+<a href="#patients">Patients</a>
+<a href="#education">Education</a>
+<a href="#contact">Contact</a>
 </nav>
 
+</header>
+
 <section class="hero">
-    <div class="container">
-        <h2>Where Healing Meets Learning</h2>
-        <p>
-            A future-focused Healthcare, Medical Tourism,
-            Education, Hospitality and Research Ecosystem.
-        </p>
 
-        <a href="#contact" class="btn">
-            Book Consultation
-        </a>
+<div class="hero-content">
 
-        <a href="#education" class="btn secondary">
-            Explore Programs
-        </a>
-    </div>
+<h1>
+Where <span>Healing</span> Meets
+<span>Learning</span>
+</h1>
+
+<p>
+Integrated Healthcare, Medical Tourism,
+Education, Hospitality & Research Ecosystem
+for Global Impact.
+</p>
+
+<a href="#patients" class="btn">International Patients</a>
+<a href="#education" class="btn">Admissions</a>
+
+</div>
+
 </section>
 
-<section id="about">
-    <div class="container">
-        <h2>About GEET Academy</h2>
+<section class="section" id="about">
 
-        <p>
-            GEET Academy is envisioned as an integrated ecosystem
-            connecting healthcare, medical tourism, education,
-            hospitality, research and innovation.
-        </p>
+<h2 class="section-title">About GEET Academy</h2>
 
-        <p>
-            Our goal is to create a global destination where
-            international patients receive quality treatment while
-            students gain world-class learning opportunities.
-        </p>
-    </div>
+<p class="section-sub">
+GEET Academy (Golden Earth Educational Trust) is creating a future-ready ecosystem that integrates healthcare, medical tourism, education, hospitality, research and international patient services under one vision.
+</p>
+
+<div class="stats">
+
+<div class="stat">
+<h2>30+</h2>
+<p>Countries Targeted</p>
+</div>
+
+<div class="stat">
+<h2>100+</h2>
+<p>Healthcare Partners</p>
+</div>
+
+<div class="stat">
+<h2>5000+</h2>
+<p>Future Students</p>
+</div>
+
+<div class="stat">
+<h2>10000+</h2>
+<p>Patients Supported</p>
+</div>
+
+</div>
+
 </section>
 
-<section id="healthcare">
-    <div class="container">
-        <h2>Healthcare Services</h2>
+<section class="section blue" id="healthcare">
 
-        <div class="cards">
-            <div class="card">Cardiology</div>
-            <div class="card">Liver Care</div>
-            <div class="card">Neurology</div>
-            <div class="card">Orthopedics</div>
-            <div class="card">Oncology</div>
-            <div class="card">Nephrology</div>
-        </div>
-    </div>
+<h2 class="section-title">Healthcare Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Cardiology</h3>
+<p>Advanced heart care and diagnostics.</p>
+</div>
+
+<div class="card">
+<h3>Liver Care</h3>
+<p>Specialized liver treatment programs.</p>
+</div>
+
+<div class="card">
+<h3>Neurology</h3>
+<p>Brain and nervous system specialists.</p>
+</div>
+
+<div class="card">
+<h3>Orthopedics</h3>
+<p>Bone and joint care solutions.</p>
+</div>
+
+<div class="card">
+<h3>Oncology</h3>
+<p>Cancer treatment and support services.</p>
+</div>
+
+<div class="card">
+<h3>Nephrology</h3>
+<p>Kidney care and transplant support.</p>
+</div>
+
+</div>
+
 </section>
 
-<section id="patients">
-    <div class="container">
-        <h2>International Patient Services</h2>
+<section class="section" id="patients">
 
-        <ol>
-            <li>Medical Consultation</li>
-            <li>Medical Report Review</li>
-            <li>Treatment Planning</li>
-            <li>Visa Assistance</li>
-            <li>Flight Support</li>
-            <li>Airport Pickup</li>
-            <li>Accommodation Support</li>
-            <li>Treatment & Recovery</li>
-        </ol>
-    </div>
+<h2 class="section-title">International Patient Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Medical Consultation</h3>
+<p>Expert review of reports and treatment planning.</p>
+</div>
+
+<div class="card">
+<h3>Travel Assistance</h3>
+<p>Visa support, flights and airport pickup.</p>
+</div>
+
+<div class="card">
+<h3>Accommodation</h3>
+<p>Comfortable stay through Golden Amoon Resorts.</p>
+</div>
+
+</div>
+
 </section>
 
-<section id="education">
-    <div class="container">
-        <h2>Education Division</h2>
+<section class="section" id="education">
 
-        <div class="cards">
-            <div class="card">Nursing College</div>
-            <div class="card">Allied Health Sciences</div>
-            <div class="card">Hotel Management</div>
-            <div class="card">Healthcare Management</div>
-            <div class="card">Medical Tourism Management</div>
-            <div class="card">Future Medical College</div>
-        </div>
-    </div>
+<h2 class="section-title">Education Division</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Nursing College</h3>
+<p>Professional nursing education and clinical training.</p>
+</div>
+
+<div class="card">
+<h3>Allied Health Sciences</h3>
+<p>Healthcare technology and support programs.</p>
+</div>
+
+<div class="card">
+<h3>Hotel Management</h3>
+<p>Hospitality and medical tourism management.</p>
+</div>
+
+<div class="card">
+<h3>Future Medical College</h3>
+<p>Comprehensive medical education ecosystem.</p>
+</div>
+
+</div>
+
 </section>
 
-<section>
-    <div class="container">
-        <h2>Hospitality Partner</h2>
+<section class="section blue">
 
-        <p>
-            Accommodation, recovery support, wellness facilities
-            and family lodging services are supported through
-            Golden Amoon Resorts.
-        </p>
-    </div>
+<h2 class="section-title">Golden Amoon Hospitality Partner</h2>
+
+<p style="text-align:center;max-width:900px;margin:auto;">
+Premium accommodation, wellness facilities, recovery support and family stay services for international patients and visitors.
+</p>
+
 </section>
 
-<section id="contact">
-    <div class="container">
-        <h2>Contact Us</h2>
+<section class="section" id="contact">
 
-        <p>Email: info@geet.academy</p>
-        <p>Phone: +91 XXXXX XXXXX</p>
+<h2 class="section-title">Contact Us</h2>
 
-        <a href="https://www.geet.academy" class="btn">
-            Visit Website
-        </a>
-    </div>
+<div class="contact-box">
+
+<p>
+🌐 www.geet.academy
+</p>
+
+<br>
+
+<p>
+📧 info@geet.academy
+</p>
+
+<br>
+
+<p>
+📞 +91 9448523003
+</p>
+
+<br>
+
+<a href="tel:+919448523003" class="btn">
+📞 Call Now
+</a>
+
+<a href="https://wa.me/919448523003" class="btn">
+💬 WhatsApp
+</a>
+
+</div>
+
 </section>
 
 <footer>
-    <div class="container">
-        <p>
-            © 2026 GEET Academy.
-            All Rights Reserved.
-        </p>
-    </div>
+
+<h3>GEET Academy</h3>
+
+<p>Learning • Healing • Hospitality</p>
+
+<p>📞 +91 9448523003</p>
+
+<p>🌐 www.geet.academy</p>
+
+<p>© 2026 GEET Academy. All Rights Reserved.</p>
+
 </footer>
+
+<a href="https://wa.me/919448523003" class="whatsapp">
+💬
+</a>
 
 </body>
 </html>
